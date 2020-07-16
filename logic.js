@@ -1,15 +1,16 @@
-var tableBtn = $("tablesBtn");
-var resBtn = $("resBtn");
+var tableBtn = $("#tableBtn");
+var resBtn = $("#resBtn");
 
 $(document).ready(function () {
-    $("#tablesBtn").click(function () {
+    $("#tableBtn").on("click", function() {
+        event.preventDefault();
     });
 
-    $("#resBtn").click(function () {
+    $("#resBtn").on("click", function() {
+        event.preventDefault();
     });
 
-});
-$(".submit").on("click", function(){
+
 
     var reservation = {
         customerName: $('#reserve_name').val().trim(),
@@ -36,6 +37,10 @@ $(".submit").on("click", function(){
         $('#reserve_email').val("");
         $('#reserve_uniqueID').val("");
 
+    });
+    
+    $(".submit").on("click", function(){
+        event.preventDefault();
     });
 
 return false;
