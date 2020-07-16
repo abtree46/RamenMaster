@@ -1,0 +1,12 @@
+HTML (each will have a route and their own html)
+- homepage - GET /
+- reservations - /reserve
+- view tables - /tables
+
+API routes
+- get list of people with reservations - /api/tables GET
+- get people on waitlist - /api/waitlist GET
+- add someone - not sure if confirmed or on waitlist POST /api/tables
+
+server.js
+3 htmls
